@@ -34,11 +34,12 @@ RM= rm
 CP= cp
 CHMOD= chmod
 INSTALL= install
-MAN1DIR= /usr/local/man/man1
+PREFIX= /usr/local
+MAN1DIR= ${PREFIX}/man/man1
 MKDIR= mkdir
 PYTHON= python
 
-DESTDIR= /usr/local/bin
+DESTDIR= ${PREFIX}/bin
 
 SRC_KCOYNER= rpl-kcoyner/README.md rpl-kcoyner/rpl rpl-kcoyner/rpl.1 rpl-kcoyner/setup.py
 SRC_RPL= rpl-rrthoman/rpl
