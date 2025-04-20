@@ -78,4 +78,4 @@ simplified `setup.pl` and use the Unix `install` command to install the man `rpl
 
 # Reporting Security Issues
 
-To report a security issue, please visit "[Reporting Security Issues](https://github.com/rpl/add/security/policy)".
+To report a security issue, please visit "[Reporting Security Issues](https://github.com/lcn2/rpl/security/policy)".
