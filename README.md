@@ -9,10 +9,21 @@ rpl is distributed under the terms of the GNU General Public License; either
 version 3 of the License, or (at your option), any later version. See the
 file COPYING for more details.
 
+
+# To install
+
+```sh
+make clobber all
+sudo make install clobber
 ```
-usage: rpl [-h] [--version] [--encoding ENCODING] [-i] [-m] [-w] [-b] [-q]
-           [-v] [-s] [-e] [-F] [--files] [-x GLOB] [-R] [-p] [-f] [-d]
-           OLD-TEXT NEW-TEXT [FILE ...]
+
+
+# To use
+
+```
+/usr/local/bin/rpl [-h] [--version] [--encoding ENCODING] [-i] [-m] [-w] [-b] [-q]
+                   [-v] [-s] [-e] [-F] [--files] [-x GLOB] [-R] [-p] [-f] [-d]
+                   OLD-TEXT NEW-TEXT [FILE ...]
 
 Search and replace text in files.
 
@@ -52,25 +63,6 @@ options:
 We added a top level Makefile in order to make it easy to build and install
 rpl on a Unix / Linux system.
 
-### to get ready to compile
-
-```sh
-make configure
-python -m pip install regex
-```
-
-### to compile
-
-```sh
-make all
-```
-
-### to install
-
-```sh
-sudo make install
-```
-
 ### FYI
 
 This merge the source of the [kcoyner rpl repo]( https://github.com/kcoyner/rpl) with
@@ -82,3 +74,8 @@ as been installed.
 
 We take a hybrid approach and build using the [kcoyner rpl repo](https://github.com/kcoyner/rpl)'s
 simplified `setup.pl` and use the Unix `install` command to install the man `rpl.1` page.
+
+
+# Reporting Security Issues
+
+To report a security issue, please visit "[Reporting Security Issues](https://github.com/rpl/add/security/policy)".
